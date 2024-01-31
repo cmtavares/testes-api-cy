@@ -4,6 +4,7 @@ pipeline {
     stages{
         stage('Setup'){
             steps{
+                git branch: 'main', url: 'https://github.com/cmtavares/testes-api-cy.git'
                 sh 'npm install'
             }
         }

@@ -64,7 +64,7 @@ describe('Testes da Funcionalidade Usuários', () => {
 
      it('Deve deletar um usuário previamente cadastrado', () => {
           cy.request('usuarios').then(response => {
-               let id = response.body.usuarios[3]._id
+               let id = response.body.usuarios[1]._id
                cy.request({
                     method: 'DELETE',
                     url: `usuarios/${id}`
